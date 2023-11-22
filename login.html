@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Aplikasi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<style>
+		
+*{
+box-sizing: border-box;
+}
+/* Mengatur font yang dipakai dan background halaman */
+body{
+	font-family: arial,Helvetica,sans-serif;
+	margin: 0;
+	background: #5F6F52;
+}
+/* Membuat Container menjadi layout flexbox dan kotak login di tengah */ 
+.container{
+display: flex;
+flex-basis: wrap;
+justify-content: center;
+}
+
+/* Mengatur kotak form login lebar 400px dan background putih */ 
+.login-box{
+
+margin-top: 150px;
+flex-basis: 400px;
+background: #fff;
+padding: 20px;
+}
+/* Mengatur judul form dengan border bawah dan posisi di tengah */
+.login-box h2{
+border-bottom: 1px solid #ccc;
+color: #555;
+text-align: center;
+padding-bottom: 30px;
+margin: 0px 0px 20px;
+}
+/* Mengatur agar tag input dan select memenuhi container dan tampilan lebih bagus */ 
+input, select{
+width: 100%;
+padding: 15px 20px;
+margin: 8px 0;
+border: 1px solid #ccc;
+}
+/* Mengatur tampilan tombol submit */
+input[type=submit]{
+background-color: #5F6F52;
+border: none;
+color: #fff;
+text-decoration: none;
+cursor: pointer;
+}
+
+	</style>
+<div class="container">
+<section class="login-box">
+<h2>Login Aplikasi</h2>
+<form method="post" action="ceklogin.php">
+<input type="text" placeholder="Username" id="username">
+<input type="password" placeholder="password" id="password"> <input type="submit" value="Login">
+</form>
+</section>
+</div>
+</body>
+</html>
